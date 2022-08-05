@@ -7,6 +7,7 @@
     {"id":{"name":"sGun","path":"sprites/sGun/sGun.yy",},"order":4,},
     {"id":{"name":"sPlayerA","path":"sprites/sPlayerA/sPlayerA.yy",},"order":3,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
+    {"id":{"name":"sEnemy","path":"sprites/sEnemy/sEnemy.yy",},"order":7,},
     {"id":{"name":"oWall","path":"objects/oWall/oWall.yy",},"order":1,},
     {"id":{"name":"sPlayer","path":"sprites/sPlayer/sPlayer.yy",},"order":0,},
     {"id":{"name":"sWallThin","path":"sprites/sWallThin/sWallThin.yy",},"order":6,},
