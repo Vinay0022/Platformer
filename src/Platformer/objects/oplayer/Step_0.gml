@@ -47,7 +47,7 @@ if(!place_meeting(x,y+1,oWall))
 {
 sprite_index = sPlayerA;
 image_speed=0;
-if(sign(vsp)>0) image_index = 1; else image_index = 0;
+if(sign(vsp)<0) image_index = 1;
 }	
 else
 {
