@@ -4,6 +4,7 @@ key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
 key_attack = mouse_check_button(mb_left);
 
+
 //Calculate Movement
 var move = key_right -key_left;
 
@@ -71,7 +72,7 @@ if (mouse_check_button(mb_left)) && (firingdelay < 0)
     firingdelay = 5;
     {
 var direction_Padding_X = 0; var scale = 1; var direction_ = 0;
-if (image_xscale == 1) {direction_Padding_X = 10; scale = 1; var direction_ = 0;}
+if (image_xscale == 1) {direction_Padding_X = 15; scale = 1; var direction_ = 0;}
 if (image_xscale == -1) {direction_Padding_X = -20; scale = -1; var direction_ = 180;}
 
 var muzzle = instance_create_layer(x + direction_Padding_X, y-6, "Bullet", oMuzzle);
