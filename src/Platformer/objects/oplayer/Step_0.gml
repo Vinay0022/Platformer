@@ -2,6 +2,7 @@
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
+key_attack = mouse_check_button(mb_left);
 
 //Calculate Movement
 var move = key_right -key_left;
@@ -62,5 +63,8 @@ sprite_index = sPlayerR;
 }
 }
 if(hsp!=0)image_xscale = sign(hsp);
+
+// Create Bullet and Muzzle
+
 
 
