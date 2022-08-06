@@ -69,17 +69,18 @@ if(hsp!=0)image_xscale = sign(hsp);
 firingdelay = firingdelay - 1;
 if (mouse_check_button(mb_left)) && (firingdelay < 0)
 { 
-    firingdelay = 5;
+    firingdelay = 3;
     {
 var direction_Padding_X = 0; var scale = 1; var direction_ = 0;
-if (image_xscale == 1) {direction_Padding_X = 15; scale = 1; var direction_ = 0;}
-if (image_xscale == -1) {direction_Padding_X = -20; scale = -1; var direction_ = 180;}
+if (image_xscale == 1) {direction_Padding_X = 18; scale = 1; var direction_ = 0;}
+if (image_xscale == -1) {direction_Padding_X = -18; scale = -1; var direction_ = 180;}
 
 var muzzle = instance_create_layer(x + direction_Padding_X, y-6, "Bullet", oMuzzle);
 muzzle.buffer_X = direction_Padding_X;
 muzzle.buffer_Y = -4;
+
 		
-var bullet = instance_create_layer(x + direction_Padding_X , y -6, "Bullet", oBullet);
+var bullet = instance_create_layer(oPlayer.x , y -5, "Bullet", oBullet);
 bullet.image_xscale = scale;
 bullet.direction = direction_ + random_range (-1,1);
 bullet.speed = 25;
