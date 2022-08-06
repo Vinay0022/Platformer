@@ -1,2 +1,2 @@
-x = oPlayer.x;
-y = oPlayer.y+10;
+x = oPlayer.x+10;
+y = oPlayer.y+1;
